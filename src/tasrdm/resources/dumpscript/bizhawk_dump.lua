@@ -264,7 +264,7 @@ function handle_frame_gb_c_a()
   local c = 0;
   local controller_input = 0;
   if (console ~= "GBA") then
-    if (emu.framecount > 0) then
+    if (emu.framecount() > 0) then
       local controls = movie.getinput(emu.framecount() - 1);
       for x = 1, #gb_controls do
         local button_name = gb_controls[x];
