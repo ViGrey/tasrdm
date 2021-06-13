@@ -80,13 +80,13 @@ function write_tcr_file()
   content = content .. "\"rerecord_count\":" .. tostring(rerecord_count) .. ",";
   content = content .. "\"blank\":0,";
   content = content .. "\"clock_filter\":4,";
-  content = content .. "\"dpcm\":true";
+  content = content .. "\"dpcm\":true,";
   content = content .. "\"resets\":";
   local resets_str = "[";
   for x = 1, #resets do
     resets_str = resets_str .. tostring(resets[x]) .. ",";
   end
-  if (#resets_str > 0) then
+  if (#resets_str > 1) then
     resets_str = string.sub(resets_str, 1, -2);
   end
   resets_str = resets_str .. "],";

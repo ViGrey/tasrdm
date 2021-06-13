@@ -174,7 +174,7 @@ function write_tcr_file()
     for x = 1, #resets do
       resets_str = resets_str .. tostring(resets[x]) .. ",";
     end
-    if (#resets_str > 0) then
+    if (#resets_str > 1) then
       resets_str = string.sub(resets_str, 1, -2);
     end
     resets_str = resets_str .. "],";
