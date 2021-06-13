@@ -35,7 +35,7 @@ local rerecord_count = 0;
 local rom_hash = "";
 local base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 local frame = 0;
-local nes_controls = {"Right", "Left", "Down", "Up", "Start", "Select", "B", "A"}
+local nes_controls = {"right", "left", "down", "up", "start", "select", "B", "A"}
 
 
 -- Write the r08/r16m file
