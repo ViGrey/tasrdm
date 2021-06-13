@@ -197,7 +197,7 @@ while (true) do
     if (movie_playing == false) then
       setup_dump();
     else
-      if (movie.framecount() > movie.length() + 1) then
+      if (movie.framecount() > movie.length()) then
         -- End of movie
         print("Movie finished.\n")
         write_tcr_file();
